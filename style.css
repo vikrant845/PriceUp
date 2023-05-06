@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.container nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    background: transparent;
+    width: 100%;
+    height: 4rem;
+}
+
+.container .logo {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.container .logo span:nth-child(1) {
+    color: #969595;
+}
+
+.container .logo span:nth-child(2) {
+    color: #50adb5;
+}
+
+.container nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.container nav ul li {
+    list-style-type: none;
+}
+
+.container a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container a.active {
+    color: #50adb5;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.container .hero_section {
+    display: flex;
+    background: #e8f0f2;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.container .hero_section img {
+    width: 70%;
+}
+
+.container .hero_section .text {
+    height: 20rem;
+    transform: translate(6rem, 70%);
+}
+
+.container .hero_section .text h1 {
+    position: absolute;
+}
+
+.container .hero_section .text h1:nth-child(1) {
+    width: 110%;
+}
+
+.container .hero_section .text h1:nth-child(2) {
+    margin: 3rem 0 0 0;
+    width: 130%;
+}
+
+.container .hero_section .text h1:nth-child(2) span {
+    background: #FFF;
+    padding: 0 0.2rem;
+}
+
+.container .hero_section .text p {
+    width: 80%;
+    margin: 8rem 0 0 0;
+    line-height: 1.8;
+}
+
+.container .hero_section button {
+    width: 70%;
+    height: 2.5rem;
+    border: none;
+    color: #FFF;
+    background: #50adb5;
+    margin: 1.5rem 0 0 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container .introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.container .introduction .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateY(1rem);
+    height: 20rem;
+    width: 40%;
+}
+
+.container .introduction .about h1 {
+    font-weight: 600;
+}
+
+.container .introduction .about p {
+    line-height: 1.8;
+}
+
+.title span, h1 span {
+    font-size: 2.5rem;
+    color: #50adb5;
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+
+.container .introduction .image {
+    position: relative;
+    max-width: 40%;
+}
+
+.container .introduction .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 130%;
+    margin: auto 0;
+    background: #50adb5;
+    z-index: 1;
+}
+
+.container .introduction .image img {
+    position: relative;
+    width: 100%;
+    transform: translate(-14%, 18%);
+    z-index: 10;
+}
+
+.container .features_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8rem 0 0 0;
+    padding: 0 2rem 2rem;
+    background: #e8f0f2;
+}
+
+.container .features_section .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15rem;
+    width: 70%;
+    text-align: center;
+    margin: auto 0;
+}
+
+.container .features_section .title p {
+    line-height: 2.5;
+}
+
+.container .features_section .features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .features_section .features .feature {
+    position: relative;
+    text-align: center;
+    width: 85%;
+}
+
+.container .features_section .features .feature h4 {
+    font-size: 1.3rem;
+}
+
+.container .features_section .features .feature span {
+    margin: 1rem 0 0 0;
+    font-weight: 600;
+}
+
+.container .features_section .features .feature p {
+    margin: 0.5rem 0 0 0;
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+
+.container .features_section .features .row {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.container .features_section .row:nth-child(2) {
+    position: relative;
+}
+
+.container .features_section img:nth-child(2) {
+    position: absolute;
+    top: 5%;
+    left: 9.5%;
+    width: 80%;
+    height: 11rem;
+}
+
+.container .benefits_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: 4rem auto 4rem auto;
+}
+
+.container .benefits_section .title, .container .pricing_section .title {
+    display: flex;
+    align-items: center;
+}
+
+.container .benefits_section .title p, .container .pricing_section .title p {
+    font-weight: 700;
+}
+
+.container .benefits_section .benefits_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35rem;
+    background: #e8f0f2;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+
+.container .benefits_section .benefits_container .benefits {
+    display: flex;
+    width: 105%;
+    justify-content: space-between;
+}
+
+.container .benefits_section .benefits_container .benefits .benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 22%;
+    height: 15rem;
+    background: #FFF;
+    border-radius: 0.6rem;
+    box-shadow: rgba(80, 173, 181, 0.7) 0px 3px 8px;
+}
+
+.container .benefits_section .benefits_container .text {
+    width: 50%;
+}
+
+.container .pricing_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 8rem;
+    border: 1px solid gray;
+    box-shadow: rgba(80, 173, 181, 1) 1.95px 1.95px 2.6px;
+}
+
+.container .pricing_section .pricings {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 0 0;
+}
+
+.container .pricing_section .pricings .pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    height: 25rem;
+    border: 2px solid #50adb5;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.container .pricing_section .pricings .pricing h4 {
+    width: 100%;
+    background: #50adb5;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.6rem 0;
+}
+
+.container .pricing_section .pricing .price {
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .pricing_section .pricing .price p:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container .pricing_section .pricing .type {
+    font-size: 0.8rem;
+    color: #50adb5;
+}
+
+.container .pricing_section .pricing ul {
+    font-size: 0.7rem;
+}
+
+.container .pricing_section .pricing p:nth-child(6) {
+    margin: -1.6rem 0 0 0;
+    font-size: 0.7rem;
+}
+
+.container .pricing_section .pricing button {
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #50adb5;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    background: transparent;
+    margin: 0 0 2rem 0;
+    color: #50adb5;
+}
+
+.container .pricing_section .information {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 9rem;
+    margin: 4rem 0 auto;
+}
+
+.container .pricing_section .information .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.container .pricing_section .information .text p:nth-child(1) {
+    color: #50adb5;
+}
+
+.container .pricing_section .information .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.container .pricing_section .information .buttons button {
+    width: 80%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.container .pricing_section .information .buttons button:nth-child(3) {
+    background: #183e41;
+    color: #FFF;
+}
+
+.container .reviews_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;
+    width: 90%;
+    margin: 4rem auto 0 auto;
+}
+
+.container .reviews_section > p:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container .reviews_section > p:nth-child(2) {
+    font-weight: 600;
+}
+
+.container .reviews_section .reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .reviews_section .reviews .review {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 18rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding: 1rem;
+    background: #50adb5;
+    color: #FFF;
+    text-align: center;
+}
+
+.container .reviews_section .reviews .review p:nth-child(1) {
+    position: absolute;
+    top: -1rem;
+    font-size: 10rem;
+}
+
+.container .reviews_section .reviews .review p:nth-child(2) {
+    margin: auto 0;
+}
+
+.container .reviews_section .reviews .review p:nth-child(3) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container .clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    width: 90%;
+    margin: 10rem auto 0 auto;
+}
+
+.container .clients h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container .clients .images_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 8rem;
+    box-shadow: rgba(80, 173, 181, 0.7) 0px 3px 8px;
+    margin: 2rem 0 0 0;
+}
+
+.container .clients .images_container img {
+    height: 80%;
+}
+
+.container .clients .slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 0 0;
+    width: 4%;
+}
+
+.container .clients .slider span {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: 2px solid #50adb5;
+}
+
+.container .clients .slider span.active {
+    width: 1.5rem;
+    background: #50adb5;
+    border-radius: 0.6rem;
+}
+
+.container .blogs_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 44rem;
+    width: 90%;
+    margin: 8rem auto 0 auto;
+}
+
+.container .blogs_container h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container .blogs_container p {
+    font-size: 0.9rem;
+    width: 50%;
+}
+
+.container .blogs_container .blogs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .blogs_container .blogs .blog {
+    width: 30%;
+    height: 28rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.container .blogs_container .blogs .blog img {
+    object-position: -2rem 0;
+    width: 110%;
+}
+
+.container .blogs_container .blogs .blog h4 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0 1rem;
+}
+
+.container .blogs_container .blogs .blog p {
+    width: 80%;
+    font-size: 0.9rem;
+    margin: 1rem 0 0 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container .blogs_container .blogs .blog span {
+    margin: 0 0 0 1rem;
+    color: #50adb5;
+    font-size: 0.8rem;
+}
+
+.container .blogs_container button {
+    width: 20%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #FFF;
+    background: #50adb5;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.container .footer {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    background: #151515;
+    color: #FFF;
+    margin: 4rem 0 0 0;
+}
+
+.container .footer .row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .footer a {
+    color: #FFF;
+}
+
+.container .footer .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8rem;
+    margin: 2rem 0 0 0;
+    width: 30%;
+}
+
+.container .footer .newsletter p:nth-child(1) {
+    font-weight: 600;
+}
+
+.container .footer .newsletter p:nth-child(2) {
+    font-size: 0.9rem;
+}
+
+.container .footer input {
+    width: 100%;
+    border: none;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.container .footer button {
+    position: absolute;
+    border: none;
+    background: #50adb5;
+    color: #FFF;
+    padding: 0.3rem;
+    width: 6%;
+    top: 8rem;
+    left: 21rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container .footer .contact_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .footer .contact_info a {
+    font-size: 0.8rem;
+    margin: 0 0 0.6rem 0;
+}
+
+.container .footer .contact_info img {
+    margin: 0 1rem 0 0;
+}
+
+.container .footer .contact_info .social_media {
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .container nav {
+        padding: 0 1rem 0 3rem;
+    }
+    
+    .container nav ul {
+        width: 60%;
+    }
+    
+    .container .hero_section img {
+        width: 50%;
+    }
+    
+    .container .hero_section .text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .container .hero_section .text h1:nth-child(2) {
+        margin: 2rem 0 0 0;
+    }
+    
+    .container .hero_section .text h1:nth-child(2) span {
+        font-size: 1.5rem;
+    }
+    
+    .container .hero_section .text p {
+        margin: 5rem 0 0 0;
+    }
+    
+    .container .hero_section button {
+        border-radius: 0.5rem;
+    }
+
+    .container .introduction {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+    
+    .container .introduction .about {
+        width: 50%;
+    }
+    
+    .container .introduction .about p {
+        font-size: 0.9rem;
+    }
+    
+    .title span, h1 span {
+        font-size: 1.8rem;
+    }
+
+    .container .features_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 4rem 0 0 0;
+        padding: 0 2rem 2rem;
+        background: #e8f0f2;
+        height: 58rem;
+    }
+    
+    .container .features_section .title {
+        height: 10rem;
+        margin: 0 auto;
+    }
+    
+    .container .features_section .title p {
+        line-height: 1.5;
+    }
+    
+    .container .features_section .features {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container .features_section .features .feature {
+        margin: 1rem 0 0 0;
+        width: 95%;
+    }
+    
+    .container .features_section .features .feature span {
+        font-weight: 600;
+    }
+    
+    .container .features_section img:nth-child(2) {
+        height: 4rem;
+    }
+    
+    .container .benefits_section .benefits_container {
+        height: 30rem;
+    }
+    
+    .container .benefits_section .benefits_container .benefits .benefit {
+        height: 10rem;
+    }
+    
+    .container .benefits_section .benefits_container .text {
+        width: 70%;
+    }
+
+    .container .benefits_section .benefits_container h3 {
+        font-size: 1.2rem;
+    }
+
+    .container .benefits_section .benefits_container p {
+        font-size: 0.9rem;
+    }
+
+    .container .pricing_section {
+        padding: 2rem 1rem;
+    }
+    
+    .container .pricing_section .pricings .pricing {
+        width: 30%;
+    }
+    
+    .container .pricing_section .pricing ul {
+        margin: 0 0 0 1.2rem;
+    }
+    
+    .container .pricing_section .information {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 9rem;
+        margin: 4rem 0 auto;
+    }
+    
+    .container .pricing_section .information .text {
+        font-size: 0.8rem;
+    }
+    
+    .container .pricing_section .information .text p:nth-child(1) {
+        color: #50adb5;
+    }
+    
+    .container .pricing_section .information .buttons button {
+        font-size: 0.7rem;
+    }
+}
