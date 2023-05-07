@@ -14,7 +14,7 @@
 }
 
 .container nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -47,7 +47,23 @@
 }
 
 .container nav ul li {
+    position: relative;
     list-style-type: none;
+}
+
+.container nav ul li span {
+    position: absolute;
+    bottom: -0.3rem;
+    width: 100%;
+    height: 0.2rem;
+    background: #50adb5;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+.container nav ul li:hover span {
+    transform: scaleX(1);
 }
 
 .container a {
@@ -62,6 +78,10 @@
 }
 
 .hamburger {
+    display: none;
+}
+
+.container nav ul.mobile_menu {
     display: none;
 }
 
@@ -114,6 +134,13 @@
     margin: 1.5rem 0 0 0;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .hero_section button:hover {
+    background: #183e41;
+    color: #FFF;
+    border-radius: 0.8rem;
 }
 
 .container .introduction {
@@ -371,6 +398,13 @@
     margin: 0 0 2rem 0;
     color: #50adb5;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .pricing_section .pricing button:hover {
+    background: #e8f0f2;
+    border: 2px solid #183e41;
+    color: #183e41;
 }
 
 .container .pricing_section .information {
@@ -410,11 +444,23 @@
     color: #000;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .pricing_section .information .buttons button:hover {
+    color: #FFF;
+    background: #50adb5;
 }
 
 .container .pricing_section .information .buttons button:nth-child(3) {
     background: #183e41;
     color: #FFF;
+    transition: all 0.3s ease;
+}
+
+.container .pricing_section .information .buttons button:nth-child(3):hover {
+    background: #50adb5;
+    color: #183e41;
 }
 
 .container .reviews_section {
@@ -590,6 +636,12 @@
     font-weight: 600;
     margin: 0 auto;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .blogs_container button:hover {
+    background: #183e41;
+    color: #FFF;
 }
 
 .container .footer {
@@ -900,6 +952,12 @@
     .container nav ul {
         display: none;
     }
+
+    .container nav ul a {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #FFF;
+    }
     
     .hamburger {
         display: flex;
@@ -937,6 +995,22 @@
         height: 0.3rem;
         background: #183e41;
         border-radius: 0.6rem;
+    }
+
+    .container nav ul.mobile_menu {
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        display: none;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 50%;
+        height: 15rem;
+        background: #183e41;
+        color: #FFF;
+        border-radius: 0.8rem;
+        z-index: 10;
     }
     
     .container .hero_section {
