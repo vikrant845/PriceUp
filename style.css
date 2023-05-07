@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', 'sans-serif';
+    width: 100%;
 }
 
 .container nav {
@@ -58,6 +59,10 @@
     color: #50adb5;
     font-size: 1.1rem;
     font-weight: 500;
+}
+
+.hamburger {
+    display: none;
 }
 
 .container .hero_section {
@@ -365,6 +370,7 @@
     background: transparent;
     margin: 0 0 2rem 0;
     color: #50adb5;
+    cursor: pointer;
 }
 
 .container .pricing_section .information {
@@ -403,6 +409,7 @@
     border-radius: 0.5rem;
     color: #000;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .container .pricing_section .information .buttons button:nth-child(3) {
@@ -542,6 +549,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 1rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .container .blogs_container .blogs .blog img {
@@ -581,6 +589,7 @@
     font-size: 1rem;
     font-weight: 600;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .container .footer {
@@ -661,7 +670,7 @@
     display: flex;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 930px) {
     .container nav {
         padding: 0 1rem 0 3rem;
     }
@@ -772,6 +781,18 @@
         font-size: 0.9rem;
     }
 
+    .container .benefits_section .benefits_container .benefits .benefit img {
+        width: 20%;
+    }
+    
+    .container .benefits_section .benefits_container .benefits .benefit h3 {
+        font-size: 0.8rem;
+    }
+    
+    .container .benefits_section .benefits_container .benefits .benefit img {
+        font-size: 0.6rem;
+    }
+
     .container .pricing_section {
         padding: 2rem 1rem;
     }
@@ -802,5 +823,428 @@
     
     .container .pricing_section .information .buttons button {
         font-size: 0.7rem;
+    }
+
+    .container .reviews_section {
+        height: 25rem;
+    }
+    
+    .container .reviews_section > p:nth-child(2) {
+        margin: -2rem 0 0 0;
+    }
+    
+    .container .reviews_section .reviews .review {
+       height: 18rem;
+    }
+    
+    .container .reviews_section .reviews .review p:nth-child(2) {
+        margin: 4rem 0 0 0;
+    }
+    
+    .container .clients .images_container {
+        align-items: center;
+    }
+    
+    .container .clients .images_container img {
+        height: 60%;
+    }
+    
+    .container .clients .slider {
+        width: 8%;
+    }
+
+    .container .blogs_container {
+        height: 34rem;
+    }
+    
+    .container .blogs_container p {
+        width: 65%;
+    }
+    
+    .container .blogs_container .blogs .blog {
+        height: 20rem;
+    }
+    
+    .container .blogs_container .blogs .blog img {
+        object-position: 0 0;
+    }
+    
+    .container .blogs_container button {
+        width: 35%;
+    }
+
+    .container .footer .newsletter {
+        width: 40%;
+    }
+    
+    .container .footer button {
+        width: 15%;
+        top: 7.5rem;
+        left: 18rem;
+        border-radius: 0.2rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .container .logo {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    
+    .container nav ul {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger span {
+        position: relative;
+        width: 80%;
+        height: 0.3rem;
+        background: #183e41;
+        border-radius: 0.6rem;
+    }
+    
+    .hamburger span::before {
+        content: '';
+        position: absolute;
+        top: -0.5rem;
+        left: 0;
+        width: 100%;
+        height: 0.3rem;
+        background: #183e41;
+        border-radius: 0.6rem;
+    }
+
+    .hamburger span::after {
+        content: '';
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        width: 100%;
+        height: 0.3rem;
+        background: #183e41;
+        border-radius: 0.6rem;
+    }
+    
+    .container .hero_section {
+        min-height: 60vh;
+    }
+    
+    .container .hero_section img {
+        display: none;
+    }
+    
+    .container .hero_section .text {
+        transform: translate(2rem, 40%);
+    }
+    
+    .container .hero_section .text h1 {
+        font-size: 1.2rem;
+    }
+    
+    .container .hero_section .text h1:nth-child(1) {
+        width: 80%;
+    }
+    
+    .container .hero_section .text h1:nth-child(2) {
+        margin: 2rem 0 0 0;
+        width: 60%;
+    }
+    
+    .container .hero_section .text h1:nth-child(2) span {
+        font-size: 1.2rem;
+    }
+    
+    .container .hero_section .text p {
+        width: 70%;
+        font-size: 0.8rem;
+        margin: 7rem 0 0 0;
+    }
+    
+    .container .introduction .about {
+        height: 18rem;
+        width: 100%;
+    }
+    
+    .container .introduction .about h1 {
+        font-size: 2rem;
+    }
+    
+    .container .introduction .about p {
+        font-size: 0.8rem;
+    }
+    
+    .title span, h1 span {
+        font-size: 2rem;
+    }
+    
+    .container .introduction .image {
+        display: none;
+    }
+
+    .container .features_section {
+        margin: 3rem 0 0 0;
+        height: 110rem;
+    }
+    
+    .container .features_section .title {
+        height: 18rem;
+        width: 100%;
+    }
+    
+    .container .features_section .title p {
+        line-height: 1.5;
+    }
+    
+    .container .features_section .features {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .container .features_section .features .row {
+        width: 100%;
+    }
+
+    .container .benefits_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 85%;
+        margin: 4rem auto 4rem auto;
+    }
+    
+    .container .benefits_section .title, .container .pricing_section .title {
+        display: flex;
+        align-items: center;
+    }
+    
+    .container .benefits_section .title p, .container .pricing_section .title p {
+        font-weight: 700;
+    }
+    
+    .container .benefits_section .benefits_container {
+        height: 95rem;
+        margin: 2rem 0 0 0;
+    }
+    
+    .container .benefits_section .benefits_container .benefits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .container .benefits_section .benefits_container .benefits .benefit {
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        height: 15rem;
+        margin: 0 0 2rem 0;
+    }
+    
+    .container .benefits_section .benefits_container .benefits .benefit:first-child {
+        margin: 4rem 0 2rem 0;
+    }
+    
+    .container .benefits_section .benefits_container .text {
+        width: 80%;
+    }
+
+    .container .pricing_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        border: 1px solid gray;
+        box-shadow: rgba(80, 173, 181, 1) 1.95px 1.95px 2.6px;
+    }
+    
+    .container .pricing_section .pricings {
+        flex-direction: column;
+    }
+    
+    .container .pricing_section .pricings .pricing {
+        width: 70%;
+        height: 25rem;
+        margin: 0 0 2rem 0;
+    }
+    
+    .container .pricing_section .information {
+        flex-direction: column;
+        align-items: center;
+        height: 22rem;
+        margin: 2rem auto 0 auto;
+    }
+    
+    .container .pricing_section .information .text {
+        width: 80%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .container .pricing_section .information .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+    
+    .container .pricing_section .information .buttons button {
+        width: 80%;
+        height: 2.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        color: #000;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    
+    .container .pricing_section .information .buttons button:nth-child(3) {
+        background: #183e41;
+        color: #FFF;
+    }
+
+    .container .reviews_section {
+        height: 66rem;
+    }
+    
+    .container .reviews_section .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container .reviews_section .reviews .review {
+        width: 100%;
+        margin: 0 0 2rem 0;
+        height: 18rem;
+    }
+
+    .container .clients {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 55rem;
+        width: 90%;
+        margin: 4rem auto 0 auto;
+    }
+    
+    .container .clients h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .container .clients .images_container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: 50rem;
+        box-shadow: rgba(80, 173, 181, 0.7) 0px 3px 8px;
+        margin: 2rem 0 0 0;
+    }
+    
+    .container .clients .images_container img {
+        height: 20%;
+        width: 35%;
+    }
+    
+    .container .clients .slider {
+        display: none;
+    }
+
+    .container .blogs_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: fit-content;
+        width: 90%;
+        margin: 8rem auto 0 auto;
+    }
+    
+    .container .blogs_container h3 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .container .blogs_container p {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    
+    .container .blogs_container .blogs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .container .blogs_container .blogs .blog {
+        width: 90%;
+        height: 25rem;
+        margin: 2rem 0 0 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 1rem;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .container .blogs_container .blogs .blog img {
+        object-position: -2rem 0;
+        width: 110%;
+    }
+    
+    .container .blogs_container .blogs .blog h4 {
+        font-size: 1.2rem;
+        margin: 1rem 0 0 1rem;
+    }
+    
+    .container .blogs_container .blogs .blog p {
+        width: 80%;
+        font-size: 0.9rem;
+        margin: 1rem 0 0 1rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .container .blogs_container .blogs .blog span {
+        margin: 0 0 0 1rem;
+        color: #50adb5;
+        font-size: 0.8rem;
+    }
+    
+    .container .blogs_container button {
+        width: 50%;
+        height: 2.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        color: #FFF;
+        background: #50adb5;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 2rem auto 0 auto;
+        cursor: pointer;
     }
 }
